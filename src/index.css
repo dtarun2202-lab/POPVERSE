@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+body {
+  @font-face {
+  font-family: 'HeroLegends';
+  src: url('./assets/fonts/Heroes Legend Hollow.ttf') format('truetype');
+}
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+  width: max-content;
+  display: flex;
+}
+
+
+
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-scaleIn {
+  animation: scaleIn 0.3s ease;
+}
